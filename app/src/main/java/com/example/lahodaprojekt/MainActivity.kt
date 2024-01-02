@@ -29,11 +29,11 @@ class MainActivity : AppCompatActivity() {
         questionListList = ArrayList()
         getQuestions()
 
-//        startNewQuiz.setOnClickListener {
-//            val intent = Intent(this, QuizActivity::class.java)
-//            intent.putExtra("LIST", questionListList as ArrayList<QuestionList>)
-//            startActivity(intent)
-//        }
+        startNewQuiz.setOnClickListener {
+            val intent = Intent(this, QuizActivity::class.java)
+            intent.putExtra("LIST", questionListList as ArrayList<QuestionList>)
+            startActivity(intent)
+        }
 //
 //        statistic.setOnClickListener {
 //            val intent = Intent(this, QuizStatistic::class.java)
