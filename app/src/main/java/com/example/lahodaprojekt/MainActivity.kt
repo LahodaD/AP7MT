@@ -34,11 +34,11 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("LIST", questionListList as ArrayList<QuestionList>)
             startActivity(intent)
         }
-//
-//        statistic.setOnClickListener {
-//            val intent = Intent(this, QuizStatistic::class.java)
-//            startActivity(intent)
-//        }
+
+        statistic.setOnClickListener {
+            val intent = Intent(this, QuizStatistic::class.java)
+            startActivity(intent)
+        }
 
         exit.setOnClickListener {
             ActivityCompat.finishAffinity(this)
